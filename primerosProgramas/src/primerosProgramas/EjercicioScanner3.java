@@ -10,7 +10,7 @@ public class EjercicioScanner3 {
 		
 		System.out.println(bisiesto);
 		/*
-		 * por testear
+		 * Testeado con el chatGPT, ta bien
 		 */
 	}
 

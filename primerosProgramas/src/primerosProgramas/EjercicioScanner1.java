@@ -7,7 +7,7 @@ public class EjercicioScanner1 {
 		Scanner scanner = new Scanner (System.in);
 		System.out.print("Cual es tu edad?: ");
 		int edad = scanner.nextInt();
-		boolean mayorDeEdad = (edad>18);
+		boolean mayorDeEdad = (edad>=18);
 		System.out.println(mayorDeEdad);
 	}
 
