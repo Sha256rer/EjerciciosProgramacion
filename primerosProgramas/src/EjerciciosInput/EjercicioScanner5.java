@@ -1,4 +1,4 @@
-package primerosProgramas;
+package EjerciciosInput;
 import java.util.Scanner;
 
 public class EjercicioScanner5 {
@@ -11,8 +11,13 @@ public class EjercicioScanner5 {
 		int horas = minutos/60;
 		int minutosFinal = minutos%60;
 		
-		//La lógica es esta, si me ape investigar como dejar el resultado en un formato bonito. 
-		//Posible forma, si min o sec < 10 añadir un 0 la izq con Int.toString. Muy cutre
+		System.out.printf("%02d:%02d:%02d", horas, minutosFinal, segundosFinal);
+		/*
+		 *%02d con printf. formatea el dígito de dos intergers, paddeando la tercera con 
+		 *ceros. %tH:%tM:%tS parece no funcionar si no se usa un objeto time para ello
+		 */
+		
+	
 		
 	}
 

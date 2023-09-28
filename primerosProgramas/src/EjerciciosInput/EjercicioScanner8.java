@@ -1,4 +1,4 @@
-package primerosProgramas;
+package EjerciciosInput;
 
 import java.util.Scanner;
 
@@ -11,7 +11,9 @@ public class EjercicioScanner8 {
 		radio = Double.valueOf(scanner.nextLine());
 		longitud = radio*2;
 		area = (radio*radio)*Math.PI;
-		System.out.println(longitud+ " , "+ area);
+		System.out.printf("%.02f", longitud );
+		System.out.println("");
+		System.out.printf("%.02f", area);
 		
 		
 

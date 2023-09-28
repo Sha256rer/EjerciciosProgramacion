@@ -1,4 +1,4 @@
-package primerosProgramas;
+package EjerciciosInput;
 
 import java.util.Scanner;
 
@@ -7,6 +7,7 @@ public class EjercicioScanner9 {
 		Scanner scanner = new Scanner (System.in);
 		System.out.println("Numero a invertir: ");
 		int numero = Integer.valueOf(scanner.nextLine());
+		//StringBuilder numero1 = new StringBuilder(Integer.toString(numero)).reverse();
 		int calc1 = numero/10;
 		int cifra1 = numero%10;
 		int calc2 = calc1/10;
@@ -15,21 +16,13 @@ public class EjercicioScanner9 {
 		int cifra3 = calc2%10;
 		int calc4 = calc3/10;
 		int cifra4 = calc3%10;
-		if(numero>10000) {
-			System.out.println(cifra1+""+cifra2+""+cifra3+""+cifra4+""+calc4);
-		}
-		else if (numero>=1000) {
-		 System.out.println(cifra1+""+cifra2+""+cifra3+""+cifra4);
-		}
-		else if (numero>=100) {
-			 System.out.println(cifra1+""+cifra2+""+cifra3);
-		}
-		else if (numero>=10) {
-			 System.out.println(cifra1+""+cifra2);
-		}
-		else  {
-			System.out.println(numero);
-		}
+		String numeroe = cifra1 +""+cifra2 +""+ cifra3 +""+ cifra4 +""+ calc4;
+		numeroe = numeroe.replaceAll("0*$", "");
+		Integer numeroo = Integer.valueOf(numeroe);
+		System.out.println(numeroo);
+		
+		
+	
 		
 		
 		/*
@@ -43,7 +36,13 @@ public class EjercicioScanner9 {
 		 * el número en orden descendente.
 		 * La única manera que he conseguido para sacar esto sin los 0 al final es con if else. Se puede con bucles y con 
 		 * un switch tambien, quizas más bonito en este caso.
+		 * Metodo alternativo con el que se puede resolve, aunque implica fumadas de strings. 
+		 * Crear un Strng Builder(Lo mismo que un string pero viene con una serie de métodos y es resizable. 
+		 * Utilizas un reverse y le da la vuelta al string.
 		 */
+		//Intentando nuevo metodo, utilizar printf. De momento no sale nada
 	}
+
+	
 
 }
