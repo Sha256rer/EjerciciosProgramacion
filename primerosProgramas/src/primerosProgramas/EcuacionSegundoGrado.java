@@ -19,6 +19,9 @@ public class EcuacionSegundoGrado {
 		if(test.isNaN()) {
 			System.out.println("Negative sqrt");
 		}
+		else if(test == 0) {
+			System.out.println(-b/divisor);
+		}
 		else {
 			double[] resultado = {(-b+test)/divisor,(-b-test)/divisor};
 			System.out.println(resultado[0]+" , "+resultado[1]);
