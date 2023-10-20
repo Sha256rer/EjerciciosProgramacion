@@ -71,7 +71,7 @@ public class Ejercicio11 {
 				decenasf = "Diez";
 				break;
 			case 2:
-				decenasf = "Veinte";
+				decenasf = "Veinti";
 				break;
 			case 3:
 				decenasf = "Treinta";
@@ -98,15 +98,21 @@ public class Ejercicio11 {
 				decenasf = "ERROR";
 				break;
 			}
+		if (decenas==2 && unidades != 0) {
+				System.out.println(decenasf + "" + unidadesf);
+				}
+		if(decenas==2 && unidades == 0) {
+			System.out.println("Veinte");
+		}
 			
-		if (unidades != 0) {
+		if (unidades != 0 && decenas != 2) {
 				System.out.println(decenasf + " y " + unidadesf);
 		
 		}else if (decenas == 0) {
 
 				System.out.println(unidadesf);
 			
-		} else {
+		} else if(decenas != 2) {
 			System.out.println(decenasf);
 		}
 			}
