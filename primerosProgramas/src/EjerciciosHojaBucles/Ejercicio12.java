@@ -9,7 +9,7 @@ public class Ejercicio12 {
         int numero = scanner.nextInt();
         for (int i = 1; i <=numero; i++) {
             System.out.printf("\n");
-            for (int k = numero*2; k>=i ; k-=1) {
+            for (int k = numero; k>=i ; k--) {
                 System.out.print("  ");
             }
             for (int j = 1; j <i ; j++) {
